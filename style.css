@@ -1,49 +1,94 @@
-
-
-
-body{
-    background-color: #cccccc;
-}
-img{
-    width: 100%;
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
-
-h1, p{
-    text-align: center;
+header{
+    background-color: #bbbbbb;
+    padding: 20px 0;
 }
 
-.titulo-principal{
-    padding: 20px;
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
 }
 
-.titulo-centralizado{
-    text-align: center;
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
 }
 
-em{
-    color: red;
+nav li{
+    display: inline-block;
+    margin: 0 0 0 15px;
 }
-
-#missao{
+ 
+nav a{
+    display: inline-block;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
     font-size: 20px;
+    text-decoration: none;
 }
 
-.itens{
-    font-style: italic;
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
 }
 
+/* parte principal do site */
+/*coloca os produtos um ao lado do outro*/
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
 
-ul{
-    display:inline-block;
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
     vertical-align: top;
-    width:20%;
-    margin-right:15%;
+    margin: 0 1,2%;
+    padding: 30px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
 }
-.beneficios{
-    background-color: white;
-    padding: 20px;
+
+.produtos li:hover{
+    border-color: #c78c19;
 }
-.img-beneficios{
-    width: 50%;
+
+.produtos li:hover h2{
+    font-size: 35px;
+}
+ 
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produtos-descricao{
+    font-size: 15px;
+}
+
+.produtos-preco{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+footer{
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 40px 0;
+}
+
+.copyright{
+    color: white;
+    font-size: 13px;
+    margin: 20px 0 0;
 }
